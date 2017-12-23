@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.minimaldev.android.lottieproj.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_fileName="sun.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/moon_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/animation_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cloud_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/moon_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cloudmoon_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/cloud_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fogday_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/animation_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fognight_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/fogday_view"
+        android:layout_toRightOf="@id/animation_view"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/overcast_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/fognight_view"
+        android:layout_toRightOf="@id/animation_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rainy_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/overcast_view"
+        android:layout_toRightOf="@id/animation_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/snowday_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/overcast_view"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/snownight_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/snowday_view"
+        android:layout_toRightOf="@id/overcast_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/thunder_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/snownight_view"
+        android:layout_toRightOf="@id/overcast_view"
+        android:layout_gravity="center"
+        app:lottie_fileName="moon.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+</RelativeLayout>
