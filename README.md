@@ -1,2 +1,2 @@
 # LottieSamples
-Lottie Library examples using After Effects.
+Lottie Library examples using Adobe After Effect.
